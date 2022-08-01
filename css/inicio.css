@@ -1,0 +1,469 @@
+body{
+    height: auto;
+    width: auto;
+    background-image: url(../img/ladrillos1.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-color: black;
+    color: blanchedalmond;
+    
+}
+
+/* inicio */
+
+section{
+    
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+    grid-template-areas: "a1 a2"
+                            "a3 a4"
+                            "a5 a6"
+                            "a7 a8";
+    grid-gap: 5px;
+    align-items: end;
+    justify-content: space-evenly;
+
+    /*
+    justify-content: space-evenly;
+
+    para espaciar entre cada area*/
+}
+
+/* NOTICIA 1*/
+
+
+#foto1{
+    
+    width: 250px;
+    height: 90%;
+    grid-area: a1;
+}
+
+#noti1{
+    grid-area: a2;
+    border: 1px dotted;
+    border-radius: 4px;
+}
+
+/* NOTICIA 2*/
+
+
+#foto2{
+    
+    width: 250px;
+    height: 90%;
+    grid-area: a3;
+}
+
+#noti2{
+
+    grid-area: a4;
+    border: 1px dotted;
+    border-radius: 4px;
+}
+
+/* NOTICIA 3 */
+
+
+#foto3{
+    
+    width: 250px;
+    height: 90%;
+    grid-area: a5;
+}
+
+#noti3{
+    grid-area: a6;
+    border: 1px dotted;
+    border-radius: 4px;
+}
+
+/* NOTICIA 4 */
+
+
+#foto4{
+    
+    width: 250px;
+    height: 90%;
+    grid-area: a7;
+}
+
+#noti4{
+    grid-area: a8;
+    border: 1px dotted;
+    border-radius: 4px;
+}
+/* NAV */
+
+ul{
+   list-style-type: none;
+   text-align: center;
+   background-color: rgb(255, 0, 0);
+   margin: 0px;
+   opacity: 0.7;
+   font-weight: bold;
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+   
+}
+
+a{
+    text-decoration: none;
+    color: black;
+    
+}
+
+
+
+li{
+    display: inline-block;
+    color:white;
+    /*width: 18%;*/
+    width: 200px;
+    font-style: bold;
+    
+}
+
+
+#banner1{
+    height: 175px;
+    width: 100%;
+    
+}
+
+/*p{
+    border: 1px dotted;
+    border-radius: 4px;
+    width: 69%;
+    
+}*/
+
+h1{
+    text-align: right;
+    color: burlywood;
+    opacity: 0.5;
+    font-style: italic;
+    text-align: right;
+}
+
+
+h2{
+    font-style: italic;
+}
+
+
+
+/* COMBATES HISTORICOS */
+
+
+.comb_his{
+    text-align: center;
+}
+
+.parrafoch{
+    border-style: dashed;
+    text-align: justify;
+    color: coral;
+    
+}
+
+.tituloch{
+    text-decoration: underline;
+    font-style: italic;
+}
+
+/* LEYENDAS */
+
+/*
+.grid_ly{
+    
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+    width: 80%;
+    margin: 3% 5%;
+    text-align: center;
+    
+    
+}
+*/
+
+.grid_ly{
+    
+    display: flex;
+    background-color: rgb(252, 215, 160);
+    opacity: 0.6;
+    font-size: large;
+    color: black;
+    text-align: center;
+    /*-ms-flex-align: end;*/
+    justify-content: space-around;
+    height: 100%;
+    
+}
+
+.ly1{
+    /*border: 1px dotted rgb(255, 255, 255);*/
+    align-items: center;
+    width: 65%;
+    /*display: flex;
+    flex-wrap: wrap;*/
+}
+
+
+.tituloly{
+    font-style: italic;
+    text-align: center;
+    align-items: center;
+    align-content: center;
+    
+} 
+
+.imgly{
+    width: 60%;
+    height: 30%;
+    text-align: center;
+    margin: 1%;
+    margin-left: auto;
+    margin-right: auto;
+
+   
+}
+
+.parrafoly{
+    
+    float: inline-end;
+    text-align: justify;
+    /*align-content: center;*/
+    margin: 5%;
+    height: 100%;
+    
+}
+
+
+/* CONTACTO */
+
+.tituloform{
+    text-align: left;
+}
+
+form{
+    width: 350px;
+    min-height: 700px;
+    margin: 30%;
+    padding: 50px 90px;
+    box-sizing: border-box;
+    margin-top: 70px;
+    border-radius: 7px;
+}
+
+/* PRÓXIMAS PELEAS */
+
+.mespp{ 
+    font-weight: 800;
+    text-decoration: underline;
+    line-height: 1cm;
+}
+
+/* FOOTER */
+
+footer{
+    text-align: center;
+    background-color: rgb(241, 44, 44);
+    padding: 2px;
+    opacity: 0.6;
+    margin-top: 1%;
+    
+}
+
+
+
+/*  LEGENDS   
+
+.grid_lg{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 1%;
+    
+}
+
+.lg1{
+    
+    width: 1200px;
+    height: auto;
+    border: 1px dotted rgb(255, 255, 255);
+    margin: 5px;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    
+
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.imglg{
+    width: 25%;
+    height: 45%;
+    
+}
+/*
+.titulolg{
+    font-style: italic;
+    text-align: center;
+    align-items: center;
+    align-content: center;
+    
+} 
+
+.imglg{
+    width: 300px;
+    height: 300px;
+    align-items: center;
+    margin: 1%;
+   
+}
+
+.parrafolg{
+    
+    float: inline-end;
+    align-content: center;
+    margin: 1%;
+    
+}
+*/
+
+/* ANIMACIONES */
+
+.imgly{
+    transition: all 3s; 
+    filter: grayscale(100%); 
+
+}
+
+.imgly:hover{
+    
+    filter: grayscale(0%);
+}
+
+
+
+
+
+/*
+.imgly {
+    animation-duration: 5s;
+    animation-name: imgcolor;
+  }
+  
+  @keyframes imgcolor {
+    from {
+      filter: grayscale(100%);
+      
+    }
+  
+    to {
+      filter: grayscale(0%);
+      
+    }
+  }
+*/
+
+
+/* MEDIA QUERIE */
+
+@media only screen and (max-width:600px){
+
+    #foto1{
+    
+        width: 100%;
+        height: 60%;
+        grid-area: a1;
+        margin: 50% 0%;
+    }
+
+    p #noti1{
+    
+        width: 100%;
+        height: 49%;
+        grid-area: a2;
+        margin: 50% 0%;
+    }
+
+    #foto2{
+    
+        width: 100%;
+        height: 60%;
+        grid-area: a3;
+        margin: 50% 0%;
+    }
+
+    p #noti2{
+    
+        width: 100%;
+        height: 49%;
+        grid-area: a4;
+        margin: 50% 0%;
+    }
+
+    #foto3{
+    
+        width: 100%;
+        height: 60%;
+        grid-area: a5;
+        margin: 50% 0%;
+    }
+
+    p #noti3{
+    
+        width: 100%;
+        height: 49%;
+        grid-area: a6;
+        margin: 50% 0%;
+    }
+
+    #foto4{
+    
+        width: 100%;
+        height: 60%;
+        grid-area: a7;
+        margin: 50% 0%;
+    }
+
+    p #noti4{
+    
+        width: 100%;
+        height: 49%;
+        grid-area: a8;
+        margin: 50% 0%;
+    }
+
+
+    .grid_ly{
+    
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        opacity: 1;
+        color: rgb(255, 232, 181);
+        background-color: black;
+        
+    }
+
+    .ly1{
+        border: 1px dotted;
+        border-radius: 4px;
+        
+    }
+
+    .tituloly{
+        text-decoration: underline;
+    }
+    
+    /*.parrafoly{
+        border: 1px dotted;
+        border-radius: 4px;
+    }*/
+}
